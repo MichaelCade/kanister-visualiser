@@ -52,12 +52,12 @@ kanctl create profile \
 
 Azure 
 
-kanctl create profile azure --namespace kanister --storage-account kanistersg --storage-key kTnXk993fl5M+ZLh+s9cqykqLV2HgunQQCaB/VZD9goDS4NCZIYpTmFu2Zc99m7ejTUD0KWzVeyN+AStyLGnbg== --bucket mc-kanister-azure --region eastus2
+kanctl create profile azure --namespace kanister --storage-account kanistersg --storage-key <AZURE_STORAGE> --bucket mc-kanister-azure --region eastus2
 
 
 Google 
 
-kanctl create profile gcp --namespace kanister --project-id cade-297618 --service-key 0b2adfdf54d65069ec03eefb75afd9dc1e662416 --bucket mc-kanister-gcs --region us-east1
+kanctl create profile gcp --namespace kanister --project-id cade-297618 --service-key <GOOGLE_KEY> --bucket mc-kanister-gcs --region us-east1
 
 
 ## Deploy your application 
