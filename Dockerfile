@@ -8,7 +8,7 @@ WORKDIR /go/src/app
 COPY . .
 
 # Build the Go application
-RUN go build -o /golang-kanister-app
+RUN go build -ldflags="-w -s" -o /golang-kanister-app
 
 # Use a minimal base image for the final Docker image
 FROM debian:latest
